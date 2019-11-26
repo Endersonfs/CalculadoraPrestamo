@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+        // variables de  los porcentajes
+        var uno =1000;
+        var dos =20000;
+        var tres =40000;
+        var cuatro =80000;
+        var cinco =120000;
+        var seis =160000;
+        var siete =200000;
+        var ocho =250000;
+        var nueve =300000;
+        var diez =12;
+        var once =12;        
+     
+        function calcular()
+        {
+        // varibles necesarias
+        var montoprestamos=0;
+        var tiempomes =0;
+        var resultado=0;
+        montoprestamos = document.getElementById("montoprestamos").value;
+        tiempomes = document.getElementById("tiempomes").value; 
+        //validacion 
+        if(montoprestamos>=uno &&  montoprestamos <=dos)
+        {
+            resultado = montoprestamos * 0.12;
+            alert(resultado);
+
+        }else if(montoprestamos >21000 && montoprestamos <tres){}
+        else if(montoprestamos >21000 && montoprestamos <cuantro){}
+        else if(montoprestamos >41000 && montoprestamos <cinco){}
+        else if(montoprestamos >81000 && montoprestamos <seis){}
+        else if(montoprestamos >121000 && montoprestamos <siete){}
+        else if(montoprestamos >161000 && montoprestamos <ocho){}
+        else if(montoprestamos >201000 && montoprestamos <nueve){}
+        else if(montoprestamos >251000 && montoprestamos <diez){}
+        else {
+            alert("Esta fuera del rango");
+        }        
+        // mostrando resultado
+        resultado = document.getElementById("compuesto");
+        resultado.innerHTML =  parseInt(resultado);       
+        }
+               
+    </script>
+</head>
+<body>
+        Datos del Préstamo
+        <br>
+        
+        <div data-validate="Valid email is required: ex@abc.xyz">
+        <input id="montoprestamos" type="number" placeholder="Monto del Préstamo" required></div>
+        <t id="camporrequerido"></t>
+        <input id="tiempomes" type="number" placeholder="Tiempo en Meses" required><br>
+        <input id="btncalcular" type="submit" value="Calcular" onclick="calcular();">
+        <br>
+        Cuota Mensual<br>
+        Compuesto: <div id="compuesto">$0.00</div>
+        Simple: <div>$0.00</div>
+
+        
+</body>
+</html>
