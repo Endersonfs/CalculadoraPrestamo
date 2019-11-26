@@ -5,76 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <title>Document</title>
-    <script>
-        // variables de  los porcentajes
-        var uno =1000;
-        var dos =20000;
-        var tres =40000;
-        var cuatro =80000;
-        var cinco =120000;
-        var seis =160000;
-        var siete =200000;
-        var ocho =250000;
-        var nueve =300000;
-        var diez =12;
-        var once =12;        
-     
-        function calcular()
-        {
-        // varibles necesarias
-        var montoprestamos=0;
-        var tiempomes =0;
-        var resultado=0;
-        montoprestamos = document.getElementById("montoprestamos").value;
-        tiempomes = document.getElementById("tiempomes").value; 
-        //validacion 
-        if(montoprestamos>=uno &&  montoprestamos <=dos)
-        {
-            resultado = montoprestamos * 0.12;
-            alert("Cantidad a un 12% : "+resultado);
-
-        }else if(montoprestamos >21000 && montoprestamos <tres){
-            resultado = montoprestamos * 0.10;
-            alert("Cantidad a un 10% : "+resultado);
-        }
-        else if(montoprestamos >21000 && montoprestamos <cuantro){
-            resultado = montoprestamos * 0.8;
-            alert("Cantidad a un 8% : "+resultado);
-        }
-        else if(montoprestamos >41000 && montoprestamos <cinco){
-            resultado = montoprestamos * 0.7;
-            alert("Cantidad a un 7% : "+resultado);
-        }
-        else if(montoprestamos >81000 && montoprestamos <seis){
-            resultado = montoprestamos * 0.6;
-            alert("Cantidad a un 6% : "+resultado);
-        }
-        else if(montoprestamos >121000 && montoprestamos <siete){
-            resultado = montoprestamos * 0.605;
-            alert("Cantidad a un 6.5% : "+resultado);
-        }
-        else if(montoprestamos >161000 && montoprestamos <ocho){
-            resultado = montoprestamos * 0.5;
-            alert("Cantidad a un 5% : "+resultado);
-        }
-        else if(montoprestamos >201000 && montoprestamos <nueve){
-            resultado = montoprestamos * 0.5050;
-            alert("Cantidad a un 5.50% : "+resultado);
-        }
-        else if(montoprestamos >251000 && montoprestamos <diez){
-            resultado = montoprestamos * 0.7;
-            alert("Cantidad a un 7% : "+resultado);
-        }
-        else {
-            alert("Esta fuera del rango");
-        }        
-        // mostrando resultado
-        resultado = document.getElementById("compuesto");
-        resultado.innerHTML =  parseInt(resultado);       
-        }
-               
-    </script>
+    <title>Calculadora Prestamos Redufegi</title>
+    <script src="./js/script.js"></script>    
 </head>
 <body>
         Datos del Préstamo
