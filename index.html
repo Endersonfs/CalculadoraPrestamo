@@ -9,21 +9,38 @@
     <script src="./js/script.js"></script>    
 </head>
 <body>
-        Datos del Préstamo
-        <br>
-        
-        <div data-validate="Valid email is required: ex@abc.xyz">
-        <input id="montoprestamos" type="number" placeholder="Monto del Préstamo" required></div>
-        <t id="camporrequerido"></t>
-        <input id="tiempomes" type="number" placeholder="Tiempo en Meses" required><br>
-        <input id="btncalcular" type="submit" value="Calcular" onclick="calcular();">
-        <br>
-        Informacion de Prestamo:
-        <br>
-        Cuota Mensual<div id="cuotamensual">$0.00</div>
-        Monto Solicitado: <div id="montosolicitado">$0.00</div>
-        Porciento Aplicado: <div id="porcientoapli">$0.00</div>
-
-        
+    <div class="containerprestamo">
+        <div class="blockprestamos">
+            <div class="title-block">Datos del Préstamo</div>
+            <br>        
+            <div class="dp" data-validate="Valid email is required: ex@abc.xyz">
+                <input id="montoprestamos" type="number" placeholder="Monto del Préstamo" required>
+            </div>
+            <div class="dp">
+            <t id="camporrequerido"></t>
+                <input id="tiempomes" type="number" placeholder="Tiempo en Meses" required><br>
+            </div>
+            <div class="dp">
+                <input id="btncalcular" type="submit" value="Calcular" onclick="calcular();">
+            </div>
+            <br>
+        </div>
+        <div class="blockprestamos">
+            <div class="title-block">Resultado de Solicitud:</div>
+            <br>
+            <div class="resultado-block">
+                <t class="title-resultado">Cuota Mensual:</t>
+                <div id="cuotamensual" class="resultado">$0.00</div>
+            </div>
+            <div class="resultado-block">
+                <t class="title-resultado">Cantidad de meses:</t> 
+                <div id="tiempo" class="resultado">$0.00</div>
+            </div>
+            <div class="resultado-block">
+                <t class="title-resultado">Porciento Aplicado:</t> 
+                <div id="porcientoapli" class="resultado">0%</div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
